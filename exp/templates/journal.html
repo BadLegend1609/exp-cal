@@ -19,31 +19,21 @@
                         <tr>
                             <td class="text-center text-muted">#{{i.id}}</td>
                             <td>
-                                <div class="main-card mb-3 card">
-                                    <div class="card-body"><h5 class="card-title">Inline</h5>
-                                        <div>
-                                            <form class="form-inline">
-                                                <div class="mb-2 mr-sm-2 mb-sm-0 position-relative form-group"><label for="exampleEmail22" class="mr-sm-2">Email</label><input name="email" id="exampleEmail22" placeholder="something@idk.cool" type="email"
-                                                                                                                                                                               class="form-control"></div>
-                                                <div class="mb-2 mr-sm-2 mb-sm-0 position-relative form-group"><label for="examplePassword22" class="mr-sm-2">Password</label><input name="password" id="examplePassword22" placeholder="don't tell!" type="password"
-                                                                                                                                                                                     class="form-control"></div>
-                                                <button class="btn btn-primary">Submit</button>
-                                            </form>
-                                            <div class="divider"></div>
-                                            <form class="">
-                                                <div class="position-relative form-check form-check-inline"><label class="form-check-label"><input type="checkbox" class="form-check-input"> Some input</label></div>
-                                                <div class="position-relative form-check form-check-inline"><label class="form-check-label"><input type="checkbox" class="form-check-input"> Some other input</label></div>
-                                            </form>
-                                            <div class="divider"></div>
-                                            <form class="form-inline">
-                                                <div class="position-relative form-group"><label for="exampleEmail33" class="sr-only">Email</label><input name="email" id="exampleEmail33" placeholder="Email" type="email" class="mr-2 form-control"></div>
-                                                <div class="position-relative form-group"><label for="examplePassword44" class="sr-only">Password</label><input name="password" id="examplePassword44" placeholder="Password" type="password"
-                                                                                                                                                                class="mr-2 form-control"></div>
-                                                <button class="btn btn-primary">Submit</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
+                                <form class="">
+                                    <input placeholder="lg" type="text" class="mb-2 form-control-lg form-control">
+                                    <input placeholder="default" type="text" class="mb-2 form-control">
+                                    <input placeholder="sm" type="text" class="mb-2 form-control-sm form-control">
+                                    <div class="divider"></div>
+                                    <select class="mb-2 form-control-lg form-control">
+                                        <option>Large Select</option>
+                                    </select>
+                                    <select class="mb-2 form-control">
+                                        <option>Default Select</option>
+                                    </select>
+                                    <select class="form-control-sm form-control">
+                                        <option>Small Select</option>
+                                    </select>
+                                </form>
                             </td>
                             <td class="text-center">
                                 Lorem
@@ -58,4 +48,13 @@
         </div>
     </div>
 </div>
+
+{% for i in debit_obj %}
+<h1>{{i}}</h1>
+{% endfor %}
+
+{% for i in credit_obj %}
+<h1>{{i}}</h1>
+{% endfor %}
+
 {% endblock %}
